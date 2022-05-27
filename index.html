@@ -1,0 +1,480 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+  <div class="container mt-5">
+    <!-- BÀI TẬP 1 -->
+    <div class="card p-3 mb-5">
+      <div class="card-title">
+        <strong>BÀI TẬP 1</strong>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="basic-url">Nhập số 1</label>
+              <input type="text" class="form-control" placeholder="Nhập số thứ 1(Mặc định là 0)"
+                aria-label="firstNumber" id="firstNumber" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="basic-url">Nhập số 2</label>
+              <input type="text" class="form-control" placeholder="Nhập số thứ 2(Mặc định là 0)"
+                aria-label="secondNumber" id="secondNumber" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="basic-url">Nhập số 3</label>
+              <input type="text" class="form-control" placeholder="Nhập số thứ 3(Mặc định là 0)"
+                aria-label="threeNumber" id="threeNumber" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col-md-2 mb-2">
+            <button class="btn btn-primary" onclick="exerciseOne()">
+              Hiển thị kết quả
+            </button>
+          </div>
+          <div class="col-md-12">
+            <div style="display: none;" class="alert alert-success alert-dismissible fade show" role="alert"
+              id="result-exercise-1">
+
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BÀI TẬP 2 -->
+    <div class="card p-3 mb-5">
+      <div class="card-title">
+        <strong>BÀI TẬP 2</strong>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="basic-url">Nhập ngày</label>
+              <input type="text" class="form-control" placeholder="Vui lòng nhập ngày" aria-label="inputDay"
+                id="inputDay" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="basic-url">Nhập tháng</label>
+              <input type="text" class="form-control" placeholder="Vui lòng nhập tháng" aria-label="inputMonth"
+                id="inputMonth" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="basic-url">Nhập năm</label>
+              <input type="text" class="form-control" placeholder="Vui lòng nhập năm" aria-label="inputYear"
+                id="inputYear" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col-md-2 ">
+            <button class="btn btn-primary" onclick="exerciseTwo()">
+              Hiển thị kết quả
+            </button>
+          </div>
+          <div class="col-md-12 ">
+            <div style="display: none;" class="alert alert-success alert-dismissible fade show mt-3" role="alert"
+              id="result-exercise-2">
+
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+    <!-- BÀI TẬP 3  -->
+    <div class="card p-3 mb-5">
+      <div class="card-title">
+        <strong>BÀI TẬP 3</strong>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="m-0 p-0">Tôi là <strong>Alice</strong>. Tôi là nơi để bạn mở tab ẩn danh để thư giản. Tiêu diệt
+              bớt tinh binh!</p>
+            <p class="m-0 p-0">
+              Trước hết bạn phải cho tôi biết bạn là ai.? Nếu bạn không phải là phụ huynh thì tôi sẽ cho bạn mở tab ẩn
+              danh đề phòng phụ huynh ganh.
+            </p>
+          </div>
+
+          <div class="col-md-12 my-2">
+            <p class="m-0 p-0 mb-4"><strong>Khai báo danh tính nào:</strong></p>
+
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="family" id="father" value="F">
+              <label class="form-check-label" for="father">Bố</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="family" id="mother" value="M">
+              <label class="form-check-label" for="mother">Mẹ</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="family" id="boy" value="B">
+              <label class="form-check-label" for="boy">Thằng Con</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="family" id="girl" value="G">
+              <label class="form-check-label" for="girl">Nhỏ Em Gái</label>
+            </div>
+          </div>
+          <div class="col-md-4 mt-1">
+            <button onclick="exerciseTwoThree()"" class=" btn btn-primary">
+              Xác nhận danh tính
+            </button>
+          </div>
+          <div class="col-md-12 ">
+            <div style="display: none;" class="alert alert-success alert-dismissible fade show mt-3" role="alert"
+              id="result-exercise-3">
+
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- BÀI TẬP 4  -->
+    <div class="card p-3 mb-5">
+      <div class="card-title">
+        <strong>BÀI TẬP 4</strong>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="basic-url">Nhập số nguyên 1</label>
+              <input type="text" class="form-control" placeholder="Nhập số thứ 1(Mặc định là 0)"
+                aria-label="firstNumber" id="firstNumberInt" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="basic-url">Nhập số nguyên 2</label>
+              <input type="text" class="form-control" placeholder="Nhập số thứ 2(Mặc định là 0)"
+                aria-label="secondNumber" id="secondNumberInt" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="basic-url">Nhập số nguyên 3</label>
+              <input type="text" class="form-control" placeholder="Nhập số thứ 3(Mặc định là 0)"
+                aria-label="threeNumber" id="threeNumberInt" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col-md-2 mb-2">
+            <button class="btn btn-primary" onclick="exerciseFour()">
+              Hiển thị kết quả
+            </button>
+          </div>
+          <div class="col-md-12 mt-2">
+            <div style="display: none;" class="alert alert-success alert-dismissible fade show" role="alert"
+              id="result-exercise-4">
+
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BÀI TẬP 5  -->
+    <div class="card mb-5 p-3">
+      <div class="card-title">
+        <strong>BÀI TẬP 5</strong>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="basic-url">Nhập tháng</label>
+              <input type="text" class="form-control" placeholder="Vui lòng nhập tháng(1 -> 12)"
+                aria-label="threeNumber" id="inputMonth5" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="basic-url">Nhập năm</label>
+              <input type="text" class="form-control" placeholder="Vui lòng nhập năm" aria-label="threeNumber"
+                id="inputYear5" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col-md-2 mb-2">
+            <button class="btn btn-primary" onclick="exerciseFive()">
+              Hiển thị kết quả
+            </button>
+          </div>
+          <div class="col-md-12 mt-2">
+            <div style="display: none;" class="alert alert-success alert-dismissible fade show" role="alert"
+              id="result-exercise-5">
+
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BÀI TẬP 6 -->
+    <div class="card mb-5 p-3">
+      <div class="card-title">
+        <strong>BÀI TẬP 6</strong>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12 mb-1">
+            HỌC SINH 1
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="basic-url"><strong><i>Toạ độ X</i></strong></label>
+              <input type="text" class="form-control" aria-label="firstNumber" aria-describedby="basic-addon1"
+                id="coordinatesXStudent1">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="basic-url">Toạ độ Y</label>
+              <input type="text" class="form-control" aria-label="secondNumber" aria-describedby="basic-addon1"
+                id="coordinatesYStudent1">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mb-1">
+            HỌC SINH 2
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="basic-url"><strong><i>Toạ độ X</i></strong></label>
+              <input type="text" class="form-control" aria-label="firstNumber" aria-describedby="basic-addon1"
+                id="coordinatesXStudent2">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="basic-url">Toạ độ Y</label>
+              <input type="text" class="form-control" aria-label="secondNumber" aria-describedby="basic-addon1"
+                id="coordinatesYStudent2">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mb-1">
+            HỌC SINH 3
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="basic-url"><strong><i>Toạ độ X</i></strong></label>
+              <input type="text" class="form-control" aria-label="firstNumber" aria-describedby="basic-addon1"
+                id="coordinatesXStudent3">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="basic-url">Toạ độ Y</label>
+              <input type="text" class="form-control" aria-label="secondNumber" aria-describedby="basic-addon1"
+                id="coordinatesYStudent3">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-2 mb-2">
+            <button class="btn btn-primary" onclick="exerciseSix()">
+              Hiển thị kết quả
+            </button>
+          </div>
+          <div class="col-md-12 mt-2">
+            <div style="display: none;" class="alert alert-success alert-dismissible fade show" role="alert"
+              id="result-exercise-6">
+
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- BÀI TẬP 7  -->
+    <div class="card mb-5 p-3">
+      <div class="card-title">
+        <strong>BÀI TẬP 7</strong>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="basic-url">Nhập số thực</label>
+              <input type="text" class="form-control" placeholder="Nhập số thực 1(Mặc định là 0)"
+                aria-label="realNumber1" id="firstRealNumber" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="basic-url">Nhập số thực</label>
+              <input type="text" class="form-control" placeholder="Nhập số thực 1(Mặc định là 0)"
+                aria-label="realNumber2" id="secondRealNumber" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="basic-url">Nhập số thực</label>
+              <input type="text" class="form-control" placeholder="Nhập số thực 2(Mặc định là 0)"
+                aria-label="realNumber3" id="threeRealNumber" aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col-md-2 mb-2">
+            <button class="btn btn-primary" onclick="exerciseSeven()">
+              Hiển thị kết quả
+            </button>
+          </div>
+          <div class="col-md-12 mt-2">
+            <div style="display: none;" class="alert alert-success alert-dismissible fade show" role="alert"
+              id="result-exercise-7">
+
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BÀI TẬP 8  -->
+    <div class="card mb-5 p-3">
+      <div class="card-title">
+        <strong>BÀI TẬP 8</strong>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="form-group">
+              <label for="basic-url">Nhập số</label>
+              <input type="text" class="form-control" placeholder="Nhập vào 3 số nguyên" aria-label="realNumber1"
+                id="intNumber8" aria-describedby="basic-addon1">
+            </div>
+          </div>
+
+          <div class="col-md-2 mb-2">
+            <button class="btn btn-primary" onclick="exerciseEight()">
+              Hiển thị kết quả
+            </button>
+          </div>
+          <div class="col-md-12 mt-2">
+            <div style="display: none;" class="alert alert-success alert-dismissible fade show" role="alert"
+              id="result-exercise-8">
+
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BÀI TẬP 9 -->
+
+    <div class="card p-3 mb-5">
+      <div class="card-title">
+        <strong>BÀI TẬP 9</strong>
+      </div>
+      <div class="card-body">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="basic-url">Nhập cạnh A</label>
+              <input type="text" class="form-control" placeholder="Cạnh a" aria-label="edgeA" id="edgeA"
+                aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="basic-url">Nhập cạnh B</label>
+              <input type="text" class="form-control" placeholder="Cạnh b" aria-label="edgeB" id="edgeB"
+                aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="form-group">
+              <label for="basic-url">Nhập cạnh C</label>
+              <input type="text" class="form-control" placeholder="Cạnh c" aria-label="edgeC" id="edgeC"
+                aria-describedby="basic-addon1">
+            </div>
+          </div>
+          <div class="col-md-2 mb-2">
+            <button class="btn btn-primary" onclick="exerciseNine()">
+              Hiển thị kết quả
+            </button>
+          </div>
+          <div class="col-md-12 mt-2">
+            <div style="display: none;" class="alert alert-success alert-dismissible fade show" role="alert"
+              id="result-exercise-9">
+
+              <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <script src="./utils.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
